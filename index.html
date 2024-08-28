@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Smart Industry Hackathon
+        </title>
+        <link rel="stylesheet" href="./res/css/burger.css">
+        <link rel="stylesheet" href="./res/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    </head>
+    <body>
+        <div id="top-container">
+            <div id="logo-container">
+                <a rel="noopener" href="https://www.citchennai.edu.in/" target="_blank"><img class="logo" alt="Chennai Institute of Technology" src="./res/logo/cit-logo.png"></a>
+                <div id="rightmost-logo-pane">
+                    <a rel="noopener" href="https://www.bonfiglioli.com/india/en" target="_blank"><img class="logo" alt="Bonfiglioli" src="./res/logo/bonfiglioli.png"></a>
+                    <div onclick="compute()" id="side-menu">
+                        <label class="burger" style="width:23px; height: 16px;" for="burger">
+                            <input type="checkbox" id="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                    </div>
+                </div>                
+            </div>            
+            <div id="menu-bar">
+                <div class="menu">
+                    <a href="#home" class="menu-item">HOME </a>
+                    <a href="#about" class="menu-item">ABOUT US</a>
+                    <a href="#themes" class="menu-item">THEMES</a>
+                    <a href="#rewards" class="menu-item">REWARDS</a>
+                    <a href="#roadmap" class="menu-item">ROADMAP</a>
+                    <a href="#contact" class="menu-item">CONTACT US</a>
+                </div>
+                <div class="menu">
+                    <!-- <div class="menu-item">Login</div> -->
+                    <!-- <a target="_blank" href="https://unstop.com/p/smart-industry-40-hackathon-2024-chennai-institute-of-technology-1139881" class="button-register">Register Here</a> -->
+                    <a id="register-button-normal-view" target="_blank" href="https://unstop.com/p/smart-industry-40-hackathon-2024-chennai-institute-of-technology-1139881">REGISTER</a>
+                </div>
+            </div> 
+        </div>
+        <div id="side-menu-flow">
+            <a href="#home" style="text-decoration: none;">
+                <div class="side-menu-item" href="#home">Home
+                </div>
+            </a>
+            <a href="#about" style="text-decoration: none;">
+
+                <div class="side-menu-item">About Us</div>
+            </a>
+            <a href="#themes" style="text-decoration: none;">
+                <div class="side-menu-item">Themes</div>
+
+            </a>
+            <a href="#rewards" style="text-decoration: none;">
+
+                <div class="side-menu-item" >Rewards</div>
+            </a>
+            <a href="#roadmap" style="text-decoration: none;">
+                <div class="side-menu-item" >Roadmap</div>
+            </a>
+            <a href="#contact" style="text-decoration: none;">
+
+                <div class="side-menu-item" >Contact Us</div>
+            </a>
+            <!-- <div class="side-menu-item">Register</div> -->
+            <a target="_blank" href="https://unstop.com/p/smart-industry-40-hackathon-2024-chennai-institute-of-technology-1139881" class="side-menu-item">Register</a>
+        </div>
+
+        <!-- hero section start -->
+        <!-- <div>
+            <div>
+                <div style="display:flex; background-image: url('img/about-hero.png'); width:100%; height: 70vh; background-size:cover;">
+                    <div style="display: inline-block; align-self: flex-end; width:100%; text-align:center; background: rgba(217, 217, 217, 1); color: black; font-size:x-large;">Experienced and Visionary</div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <!-- <div class="slider">
+            <div class="slide active" style="max-width: 100%; height: auto;">
+                <img src="./res/primary/Road map.png" alt="" >
+            </div>
+            <div class="slide">
+                <img alt="Image 2" style="max-width: 100%; height: auto;"
+                     src="src/img/ilovepdf_pages-to-jpg/What inspiring quote do you want to share with the world_page-0008.jpg">
+            </div>
+            <div class="slide">
+                <img alt="Image 3" style="max-width: 100%; height: auto;"
+                     src="src/img/ilovepdf_pages-to-jpg/What inspiring quote do you want to share with the world_page-0009.jpg">
+            </div>
+            <button class="prev" onclick="showPrevSlide()">&#10094;</button>
+            <button class="next" onclick="showNextSlide()">&#10095;</button>
+        </div> -->
+
+
+        
+        <!-- <div class="marquee-1" style="background-color: #D9D9D9; font-family: Montserrat, sans-serif;">
+            <h3>Chennai Institute of Technology & Bonfiglioli present Smart Industry Hackathon SIH 2024.</h3>
+         </div> -->
+
+         <div class="slider" id="home">
+            <div class="list">
+                <div class="item">
+                    <img src="./res/primary/Artboard 1.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./res/primary/Artboard 2.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./res/primary/Artboard 3.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./res/primary/Artboard 4.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./res/primary/Artboard 5.png" alt="">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+         <marquee behaviour="" direction="alternative" class="bg-color" scrollamount="18">
+            <h2>Chennai Institute of Technology & Bonfiglioli present Smart Industry Hackathon SIH 2024.</h2>
+         </marquee>
+
+        <!-- hero section end -->
+        <div class="content-pane">
+            <img id="img-main" src="./res/primary/sih.png">
+            <!-- <div id="right-pane">
+                <div id="divider-pane-horizontal">
+                    <div style="display: flex; flex-direction:column; width:100%;">
+                        <div class="title-text title-gap who-can-apply">WHO CAN APPLY?</div>
+                        <div>STUDENTS FROM ENGINEERING & TECHNOLOGY INSTITUTIONS</div>
+                        <div>INDUSTRY PROFESSIONALS</div>
+                        <div>STARTUPS & INNOVATORS</div>
+                        <div>RESEARCHERS & ACADEMICIANS</div>
+                        <a id="register-button-mobile-view" target="_blank" href="https://unstop.com/p/smart-industry-40-hackathon-2024-chennai-institute-of-technology-1139881" class="side-menu-item">REGISTER</a>
+                    </div>
+                    <div style="display: flex; flex-direction:column; width:100%;">
+                        <div class="title-text title-gap">IMPORTANT DATES</div>
+                        <div class="pane-date">
+                            <div class="date-gap">PROPOSAL SUBMISSION <br><span class="title-text">20TH SEP 2024</span></div>
+                            <div class="date-gap">SHORTLISTED PROPOSALS <br><span class="title-text">26TH SEP 2024</span></div>
+                        </div>
+                        <div class="pane-date">
+                            <div class="date-gap">HACKATHON <br><span class="title-text">13TH & 14TH OCT 2024</span></div>
+                            <div class="date-gap">EVENT FINALE <br><span class="title-text">15TH OCT 2024</span></div>
+                        </div>                        
+                    </div>
+                    <div style="display: flex; flex-direction:column; width:100%;">
+                        <div class="title-text title-gap">CONTACT</div>
+                        <div style="max-width:94%; padding-left:3%; word-wrap: break-word; overflow-wrap: break-word; text-align:center; align-items:center;"><a style="color: #003861; text-decoration:none;" href="mailto:BONFIGLIOLI.HACKATHON24@CITCHENNAI.NET">bonfiglioli.hackathon24@citchennai.net</a></div>
+                        <div id="last">KISHORE R | +91 86084 34063</div>
+                    </div>
+                </div>                
+            </div> -->
+            <div class="side-right">
+                <p class="title-text-1">The countdown has begun!</p>
+                <div class="timer-cont" id="timer-cont">
+                    <div class="days-cont">
+                        <div id="days" class="number-cont">19</div>
+                        <div class="label">DAYS</div>
+                    </div>
+                    <div class="col-cont"> : </div>
+                    <div class="hours-cont">
+                        <div id="hours" class="number-cont">23</div>
+                        <div class="label">HOURS</div>
+                    </div>
+                    <div class="col-cont">: </div>
+                    <div class="min-cont">
+                        <div id="minutes" class="number-cont">46</div>
+                        <div class="label">MINUTES</div>
+                    </div>
+                    <div class="col-cont">: </div>
+                    <div class="sec-cont">
+                        <div id="seconds" class="number-cont">38</div>
+                        <div class="label">SECONDS</div>
+                    </div>      
+                </div>
+                <div id="countdown" style="display: flex; font-size: 40px; font-weight: 900; color: red;"></div>                   
+                    <a href="https://unstop.com/p/smart-industry-40-hackathon-2024-chennai-institute-of-technology-1139881" class="register" >Register</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- about section -->
+        
+        <div class="about-section" id="about">
+            <div class="about-sih">
+                <h2>
+                    ABOUT SMART INDUSTRY HACKATHON
+                </h2>
+                <p>
+                    <strong>[ IN COLLABORATION, THE CHENNAI INSTITUTE OF TECHNOLOGY AND BONFIGLIOLI ]</strong> are hosting the Smart Industry 4.0 Hackathon 2024. This event will highlight cutting-edge advancements in manufacturing, smart technologies, and digital transformation. Drawing inspiration from the visionary legacy of Clementino Bonfiglioli and the innovative contributions of G.D. Naidu, the hackathon seeks to leverage their enduring creativity and practical ingenuity to address contemporary industrial challenges.
+                </p>
+            </div>
+
+            <div class="about-split">
+                <div class="about-cit">
+                    <h2>
+                        about
+                    </h2>
+                    <div class="logo-1">
+                        <a rel="noopener"  href="https://www.citchennai.edu.in/" target="_blank"><img class="logo-3" alt="Chennai Institute of Technology" src="./res/logo/cit-logo.png"></a>
+                    </div>
+                    <p>
+                        Chennai Institute of Technology Group of Institutions is renowned for its practical education and consistent top rankings in Tamil Nadu. By partnering with numerous companies, it offers students diverse educational and recreational opportunities. 
+                    </p>
+                    <div class="align-center">
+                    <a rel="noopener" href="https://www.citchennai.edu.in/" target="_blank" class="about-button" >Read More</a>
+                    </div>
+                </div>
+                <div class="vl"></div>
+                <div class="about-bonfiglioli">
+                    <h2>
+                        about
+                    </h2>
+                    <div class="logo-1">
+                        <a rel="noopener" href="https://www.bonfiglioli.com/india/en" target="_blank"><img class="logo-3" alt="Bonfiglioli" src="./res/logo/bonfiglioli.png"></a>
+                    </div>
+                    <p>
+                        Bonfiglioli is a global leader in the power transmission industry. A highly-reputed manufacturer and distributor, it specialises in wind and mobility, discrete manufacturing and process, mechatronic and motion systems.
+                    </p>
+                    <div class="align-center"> 
+                        <a rel="noopener" href="https://www.bonfiglioli.com/india/en" target="_blank" class="about-button" >Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- about section -->
+
+
+
+        <!-- themes section -->
+         <!-- <div class="themes">
+            <h1>THEMES</h1>
+            
+         <div class="swiper mySwiper">
+            <div class="swiper-wrapper" style="padding: 40px 0px;">
+                <div class="swiper-slide">
+                    <button class="box-1" onclick="openPopup()">
+                    <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                        <div style="height: 100px; width: 100px;" class="image-container">
+                            <img src="./res/sih/ai and ml.png" alt="" srcset="" >
+                        </div>
+                        
+                        <h4>ai & ml learning</h4>
+                            <p>Quality Control</p>
+                            <p>Process Optimization</p>
+                            <p>Supply Chain Forecasting</p>
+                        </div>
+                    </div>
+                    </button>
+                    <div class="swiper-slide">
+                        <button class="box-1" >
+
+                            <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                                <div style="height: 100px; width: 100px;">
+                                    <img src="./res/sih/aditive manufacturing.png" alt="" srcset="" >
+                                </div>
+                                <h4>Additive manufacturing</h4>
+                                <p>Custom Manufacturing</p>
+                                <p>Predictive Maintenance</p>
+                                <p>Performance Monitoring</p>
+                                
+                            </div>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                    <button class="box-1" data-modal="modal1">
+
+                        <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                            <div style="height: 100px; width: 100px;">
+                                <img src="./res/sih/energy-efficiency.png" alt="" srcset="" >
+                            </div>
+                            
+                            <h4>energy efficiency and management</h4>
+                                <p>Energy Audits</p>
+                                <p>Renewable Energy Integration</p>
+                                <p>Energy Consumption Optimization</p>
+                        </div>
+                    </button>
+
+                </div>
+                <div class="swiper-slide">
+                    <button class="box-1" >
+
+                    <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                        <div style="height: 100px; width: 100px;">
+                            <img src="./res/sih/advanced robotics.jpg" alt="" srcset="" >
+                        </div>
+                        
+                        <h4>advanced robotics and automation</h4>
+                            <p>Robotic Process Automation (RPA)</p>
+                            <p>Automated Material Handling</p>
+                            <p>Collaborative Robots (Cobots)</p>
+                    </div>
+                </button>
+
+                </div>
+                <div class="swiper-slide">
+                    <button class="box-1" popovertarget="pop-up">
+
+                    <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                        <div style="height: 100px; width: 100px;">
+                            <img src="./res/sih/data analytics and iot.jpg" alt="" srcset="" >
+                        </div>
+                        
+                        <h4>data analytics and big data</h4>
+                            <p>Supply Chain Analytics</p>
+                            <p>Customer Insights</p>
+                            <p>Manufacturing Intelligence</p>
+                    </div>
+                </button>
+
+                </div>
+                <div class="swiper-slide">
+                    <button class="box-1" >
+
+                    <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                        <div style="height: 100px; width: 100px;">
+                            <img src="./res/sih/sustainable manufacturing.jpg" alt="" srcset="" >
+                        </div>
+                        
+                        <h4>sustainable manufactuing</h4>
+                            <p>Sustainable Supply Chains</p>
+                            <p>Circular Economy</p>
+                            <p>Green Manufacturing Processes</p>
+                    </div>
+                </button>
+
+                </div>
+                <div class="swiper-slide">
+                    <button class="box-1" >
+
+                    <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                        <div style="height: 100px; width: 100px;">
+                            <img src="./res/sih/cybersecurity.png" alt="" srcset="" >
+                        </div>
+                        
+                        <h4>cybersecurity in industrial system</h4>
+                            <p>Threat Detection and Response</p>
+                            <p>Data Encryption</p>
+                            <p>Industrial Network Security</p>
+                    </div>
+                </button>
+
+                </div>
+                <div class="swiper-slide">
+                    <button class="box-1" >
+
+                    <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                        <div style="height: 100px; width: 100px;">
+                            <img src="./res/sih/energy-efficiency.png" alt="" srcset="" >
+                        </div>
+                        
+                        <h4>iot</h4>
+                            <p>Energy Management</p>
+                            <p>Predictive Maintenance</p>
+                            <p>Smart Factories</p>
+                    </div>
+                </button>
+
+                </div>
+                <div class="swiper-slide">
+                    <button class="box-1" >
+
+                    <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                        <div style="height: 100px; width: 100px;">
+                            <img src="./res/sih/blockchain in manufacturing.png" alt="" srcset="" >
+                        </div>
+                        
+                        <h4>blockchain in manufacturing</h4>
+                            <p>Supply Chain Transparency</p>
+                            <p>Smart Contracts</p>
+                            <p>Traceability and Provenance</p>
+                    </div>
+                </button>
+
+                </div>
+                <div class="swiper-slide">
+                    <button class="box-1" >
+
+                    <div style="display: flex; align-items: center; justify-content: center; flex-direction: column; ">
+                        <div style="height: 100px; width: 100px;">
+                            <img src="./res/sih/blockchain in manufacturing.png" alt="" srcset="" >
+                        </div>
+                        <h3>Digital twins</h3>
+                        <p>Virtual Simulation</p>
+                        <p>Predictive Maintenance</p>
+                        <p>Performance Monitoring</p>
+                            
+                    </div>
+                </div>
+            </button>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+         </div>-->
+         
+         <!-- <div id="pop-up" class="pop-up" popover>
+            this is a popup
+         </div> -->
+         <!--<div id="popup" class="popup" onclick="closePopup(event)">
+            <div class="popup-content" style="display: flex; flex-direction: column; color: white ; align-items: center; font-family: Montserrat, sans-serif; text-transform: uppercase;">
+                <span class="close-btn" onclick="closePopup(event)">&times;</span>
+                <h2 id="popup-title">Digital twins</h2>
+                <p id="popup-text">Virtual Simulation</p>
+                <p id="popup-text">Virtual Simulation</p>
+                <p id="popup-text">Virtual Simulation</p>
+            </div>
+        </div> -->
+        <!-- themes section -->
+
+
+        <div class="themes" id="themes">
+            <h1>THEMES</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper" style="padding: 40px 0px;">
+                    <div class="swiper-slide">
+                        <button class="box-1" 
+                            data-title="AI & ML Learning"
+                            data-text="• Quality Control: AI algorithms for automated quality inspection and defect detection."
+                            data-text1="• Process Optimization: ML models to analyze production data and optimize manufacturing processes."
+                            data-text2="• Supply Chain Forecasting: AI-driven demand forecasting to improve inventory management.">
+                            <div class="content">
+                                <div class="image-container">
+                                    <img src="./res/sih/ai and ml.png" alt="">
+                                    <img src="./res/sih/ai and ml(w).png" alt="" class="nth-2">
+
+                                </div>
+                                <h3 style="padding-top: 20px;">ai & ml learning</h3>
+                                <p>Quality Control</p>
+                                <p>Process Optimization</p>
+                                <p>Supply Chain Forecasting</p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="box-1"
+                            data-image="../sih/aditive\ manifacturing\(w\).png"
+                            data-title="Additive Manufacturing"
+                            data-text="• Rapid Prototyping: Use 3D printing for fast and cost-effective prototyping."
+                            data-text1="• Custom Manufacturing: Develop solutions for customized and on-demand manufacturing."
+                            data-text2="• Sustainable Printing Materials: Innovate with sustainable and recyclable printing materials.">
+                            <div class="content">
+                                <div class="image-container">
+                                    <img src="./res/sih/aditive manufacturing.png" alt="">
+                                    <img src="./res/sih/aditive manifacturing(w).png" alt="" class="nth-2">
+
+                                </div>
+                                <h3 style="padding-top: 20px;">Additive Manufacturing</h3>
+                                <p>Custom Manufacturing</p>
+                                <p>Predictive Maintenance</p>
+                                <p>Performance Monitoring</p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="box-1"
+                            data-image="../sih/additive_manufacturing_hover.png"
+                            data-title="energy efficiency and management"
+                            data-text="• Energy Audits: Develop tools for conducting energy audits in manufacturing facilities."
+                            data-text1="• Renewable Energy Integration: Create systems for integrating renewable energy sources in manufacturing."
+                            data-text2="• Energy Consumption Optimization: Use AI and IoT to optimize energy consumption and reduce costs.">
+                            <div class="content">
+                                <div class="image-container">
+                                    <img src="./res/sih/energy-efficiency.png" alt="">
+                                    <img src="./res/sih/energy-efficiency(w).png" alt="" class="nth-2">
+
+                                </div>
+                                <h3 style="padding-top: 20px;">energy efficiency and management</h3>
+                                <p>Energy Audits</p>
+                                <p>Renewable Energy Integration</p>
+                                <p>Energy Consumption Optimization</p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="box-1"
+                            data-image="../sih/additive_manufacturing_hover.png"
+                            data-title="advanced robotics and automation"
+                            data-text="• Collaborative Robots (Cobots): Design and deploy cobots to work alongside human workers."
+                            data-text1="• Automated Material Handling: Develop automated systems for material handling and inventory management."
+                            data-text2="• Robotic Process Automation (RPA): Implement RPA for automating repetitive tasks.">
+                            <div class="content">
+                                <div class="image-container">
+                                    <img src="./res/sih/advanced robotics.jpg" alt="">
+                                    <img src="./res/sih/aditive ro (w).png" alt="" class="nth-2">
+
+                                </div>
+                                <h3 style="padding-top: 20px;">advanced robotics and automation</h3>
+                                <p>Robotic Process Automation (RPA)</p>
+                                <p>Automated Material Handling</p>
+                                <p>Collaborative Robots (Cobots)</p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="box-1"
+                            data-image="./res/sih/data analytics and big data.png"
+                            data-title="data analytics and big data"
+                            data-text="• Manufacturing Intelligence: Use big data analytics to gain insights into manufacturing processes."
+                            data-text1="• Customer Insights: Analyze customer data to understand market trends and preferences."
+                            data-text2="• Supply Chain Analytics: Leverage big data to analyze and optimize supply chain performance">
+                            <div class="content">
+                                <div class="image-container">
+                                    <img src="./res/sih/data analytics and iot.jpg" alt="">
+                                    <img src="./res/sih/data analytics and big data.png" alt="" class="nth-2">
+
+                                </div>
+                                <h3 style="padding-top: 20px;">data analytics and big data</h3>
+                            <p>Supply Chain Analytics</p>
+                            <p>Customer Insights</p>
+                            <p>Manufacturing Intelligence</p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="box-1"
+                            data-image="../sih/additive_manufacturing_hover.png"
+                            data-title="sustainable manufactuing"
+                            data-text="• Green Manufacturing Processes: Innovate eco-friendly manufacturing processes to reduce waste."
+                            data-text1="• Circular Economy: Develop solutions to promote recycling and reuse of materials in manufacturing."
+                            data-text2="• Sustainable Supply Chains: Create systems to track and reduce the environmental footprint of supply chains.">
+                            <div class="content">
+                                <div class="image-container">
+                                    <img src="./res/sih/sustainable manufacturing.jpg" alt="">
+                                    <img src="./res/sih/sustainable (w).png" alt="" class="nth-2">
+
+                                </div>
+                                <h3 style="padding-top: 20px;">sustainable manufactuing</h3>
+                            <p>Sustainable Supply Chains</p>
+                            <p>Circular Economy</p>
+                            <p>Green Manufacturing Processes</p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="box-1"
+                            data-image="../sih/additive_manufacturing_hover.png"
+                            data-title="cybersecurity in industrial system"
+                            data-text="• Industrial Network Security: Develop solutions to protect industrial networks from cyber threats."
+                            data-text1="• Data Encryption: Implement robust encryption methods to secure communication between devices."
+                            data-text2="• Threat Detection and Response: Use AI and ML to detect and respond to cybersecurity threats.">
+                            <div class="content">
+                                <div class="image-container">
+                                    <img src="./res/sih/cybersecurity.png" alt="">
+                                    <img src="./res/sih/cybersecurity(w).png" alt="" class="nth-2">
+
+                                </div>
+                                <h3 style="padding-top: 20px;">cybersecurity in industrial system</h3>
+                            <p>Threat Detection and Response</p>
+                            <p>Data Encryption</p>
+                            <p>Industrial Network Security</p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="box-1"
+                            data-image="../sih/additive_manufacturing_hover.png"
+                            data-title="IOT"
+                            data-text="• Smart Factories: Solutions to automate manufacturing processes and enable real-time data collection."
+                            data-text1="• Predictive Maintenance: Use IIoT sensors and analytics to predict equipment failures."
+                            data-text2="• Energy Management: Implement systems to monitor and optimize energy usage.">
+                            <div class="content">
+                                <div class="image-container">
+                                    <img src="./res/sih/iot.png" alt="">
+                                    <img src="./res/sih/iot(w).png" alt="" class="nth-2">
+                                </div>
+                                <h3 style="padding-top: 20px;">iot</h3>
+                            <p>Energy Management</p>
+                            <p>Predictive Maintenance</p>
+                            <p>Smart Factories</p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="box-1"
+                            data-image="../sih/additive_manufacturing_hover.png"
+                            data-title="Additive Manufacturing"
+                            data-text="• Virtual Simulation: Create digital replicas of physical assets for simulation and optimization."
+                            data-text1="• Predictive Maintenance: Use digital twins to predict and prevent equipment failures."
+                            data-text2="• Performance Monitoring: Monitor real-time performance and make adjustments to improve efficiency.">
+                            <div class="content">
+                                <div class="image-container">
+                                    <img src="./res/sih/blockchain in manufacturing.png" alt="">
+                                    <img src="./res/sih/blockchain in manifacturing(w).png" alt="" class="nth-2">
+
+                                </div>
+                                <h3 style="padding-top: 20px;">blockchain in manufacturing</h3>
+                            <p>Supply Chain Transparency</p>
+                            <p>Smart Contracts</p>
+                            <p>Traceability and Provenance</p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="box-1"
+                            data-title="Digital twins"
+                            data-text="• Virtual Simulation: Create digital replicas of physical assets for simulation and optimization."
+                            data-text1="• Predictive Maintenance: Use digital twins to predict and prevent equipment failures."
+                            data-text2="• Performance Monitoring: Monitor real-time performance and make adjustments to improve efficiency."
+                            >
+                            <div class="content">
+                                <div class="image-container">
+                                    <img src="./res/sih/digital twins.png" alt="">
+                                    <img src="./res/sih/digital twins(w).png" alt="" class="nth-2">
+
+                                </div>
+                                <h3 style="padding-top: 20px;">Digital twins</h3>
+                        <p>Virtual Simulation</p>
+                        <p>Predictive Maintenance</p>
+                        <p>Performance Monitoring</p>
+                            </div>
+                        </button>
+                    </div>
+                    <!-- Add more swiper-slide items as needed -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+        <div id="popup" class="popup" onclick="closePopup(event)">
+            <div class="popup-content" style="display: flex; flex-direction: column; color: white; align-items: center; font-family: Montserrat, sans-serif; text-transform: uppercase;">
+                <span class="close-btn" onclick="closePopup(event)">&times;</span>
+                <h2 id="popup-title">Title</h2>
+                <div style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; padding: 20px;">
+
+                    <p id="popup-text">Text</p>
+                    <p id="popup-text1">Text</p>
+                    <p id="popup-text2">Text</p>
+                </div>
+            </div>
+        </div>
+        <!-- themes section -->
+
+
+        <!-- rewards section -->
+         <div class="rewards" id="rewards">
+            <h1 class="align-center">REWARDS (CASH PRIZE)</h1>
+            <div class="prices">
+                <div class="price-2">
+                    <h3 style="padding-bottom: 20px; text-align: center;">2ND PRIZE</h3>
+                    <img src="./res/primary/2ndCup.png" alt="" srcset="" width="300px" height="300px">
+                    <h3 style="padding-top: 15px; text-align: center;">₹ 1,00,000</h3>
+                </div>
+                <div class="price-1">
+                    <h3 style="padding-bottom: 20px; text-align: center;">1ST PRIZE</h3>
+                    <img src="./res/primary/1stCup.png" alt="" srcset="" width="300px" height="300px">
+                    <h3 style="padding-top: 15px; text-align: center;">₹ 1,25,000</h3>
+                </div>
+                <div class="price-3">
+                    <h3 style="padding-bottom: 20px; text-align: center;">3RD PRIZE</h3>
+                    <img src="./res/primary/3rdCup.png" alt="" srcset="" width="300px" height="300px">
+                    <h3 style="padding-top: 15px; text-align: center;">₹ 75,000</h3>
+                </div>
+            </div>
+         </div>
+
+        <!-- rewards section -->
+        
+        
+        <!-- roadmap section -->
+         <div class="roadmap" id="roadmap">
+            <img src="./res/primary/Road map.png" alt="">
+         </div>
+        <!-- roadmap section -->
+
+
+         <div style="background-color: black;">
+        <!-- organizers section -->
+        <div class="organizers" id="organizers">
+            <h1 class="align-center" >Organisers</h1>
+            <div class="view">
+                <a rel="noopener"  href="https://www.citchennai.edu.in/" target="_blank"><img class="logo-2" alt="Chennai Institute of Technology" src="./res/logo/CIT Logo Yellow-Autonomous(blue).png"></a>
+                <a rel="noopener" href="https://www.bonfiglioli.com/india/en" target="_blank"><img class="logo" alt="Bonfiglioli" src="./res/logo/bonfiglioli(BLUE).png"></a>
+            </div>
+            <hr class="center-hr">
+            <div class="powered">
+
+                <h2 class="align-center text-powered" >POWERED BY</h2>
+                <div class="kaizen">
+                    
+                    <img src="./res/logo/logo1-removebg.png" alt="" class="img-new">
+                    <a href="https://kaizensparktech.com/" style="text-decoration: none; color: black;">
+                        <h3 class="align-center new">KAIZENSPARK TECH</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- organizers section -->
+
+
+        <!-- contact section -->
+
+        <div class="contact" id="contact">
+            <div class="contact-us" style="display: flex; justify-content: center; align-items: center;">
+                <h1 style="padding-bottom: 14px;">Contact Us</h1>
+                <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 10px;">
+                    <p style="padding-top: 30px;">name : kishore r</p>
+                    <p>Contact no : +91 86084 34063</p>
+                    <p >mail id : <a href="mailto:bonfogilihackathon24@citchennai.net" class="mail">bonfogilihackathon24@citchennai.net</a>
+                    </p>
+                </div>
+                <div style="display: flex; flex-direction: row; gap: 40px; padding-top: 50px;">
+                    <a href="https://www.linkedin.com/school/chennai-institute-of-technology/" style="color: white;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/citchennai" style="color: white;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/citchennai_engineering/" style="color: white;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <h1 style="padding-bottom: 10px;">Location</h1>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1943.99968284516!2d80.04207062273703!3d12.971892098629313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f4d07355bab5%3A0xbb6063169c4ed4d9!2sChennai%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1724587793825!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9993656688944!2d80.042918!3d12.971892099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f4d07355bab5%3A0xbb6063169c4ed4d9!2sChennai%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1724816075275!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <!-- contact section -->
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            let count = 0;
+            const menu = document.getElementById("side-menu-flow");
+            function compute() {
+                if(++count % 4 == 0) {
+                    menu.style.display = "none";
+                } else {
+                    menu.style = "display: flex; width: 100%; height: auto; flex-direction: column; background-color: #D9D9D9; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: bold;";
+                }
+            }
+            menu.style.display = "none";
+        </script>
+        <!-- <div id="right-pane">
+                <div class="title-text title-gap">WHO CAN APPLY?</div>
+                <div>STUDENTS FROM ENGINEERING & TECHNOLOGY INSTITUTIONS</div>
+                <div>INDUSTRY PROFESSIONALS</div>
+                <div>STARTUPS & INNOVATORS</div>
+                <div>RESEARCHERS & ACADEMICIANS</div>
+                <div class="title-text title-gap">IMPORTANT DATES</div>
+                <div>PROPOSAL SUBMISSION <span class="title-text">20TH SEP 2024</span></div>
+                <div>SHORTLISTED PROPOSALS <span class="title-text">26TH SEP 2024</span></div>
+                <div>HACKATHON <span class="title-text">13TH & 14TH OCT 2024</span></div>
+                <div>EVENT FINALE <span class="title-text">15TH OCT 2024</span></div>
+                <div class="title-text">CONTACT</div>
+                <div>BONFIGLIOLI.HACKATHON24@CITCHENNAI.NET</div>
+                <div>KISHORE R | +91 86084 34063</div>
+        </div> -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+        <script src="./res/js/index.js"></script>
+    </body>
+</html>
