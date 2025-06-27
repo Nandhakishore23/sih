@@ -85,7 +85,7 @@ function updateCountdown() {
 
     if (timeLeft < 0) {
       clearInterval(countdownTimer);
-      document.getElementById("countdown").innerHTML = "Live Now";
+      document.getElementById("countdown").innerHTML = "Contest Ended";
       document.getElementById("timer-cont").style.display = "none";
     }
   }
